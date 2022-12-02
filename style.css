@@ -1,0 +1,305 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  transition: 0.3s;
+}
+
+/*Navbar*/
+.navbar-brand {
+  font-weight: 900;
+  font-size: 25px;
+  color: black;
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: 44px;
+}
+
+.nav-item a {
+  margin-right: 25px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+
+/* Jumbotron */
+.jum1 {
+  background-image: url(jumbotron.jpg);
+  background-size: cover;
+  height: 500px;
+  text-align: center;
+}
+
+.jumbotron {
+  margin-top: -75px;
+}
+
+.display-4 {
+  font-weight: 900;
+  font-size: 300%;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.lead {
+  font-weight: 300;
+  font-size: 80%;
+  line-height: 1.5;
+  padding-top: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.btn-dark {
+  font-size: 15px;
+  text-align: center;
+  padding: 7px 58px 7px 58px;
+  border-radius: 20px;
+}
+
+.btn-dark a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Product */
+#products .card {
+  width: 260px;
+  margin: auto;
+  box-shadow: 4px 4px 4px rgb(224, 224, 224);
+  margin-bottom: 80px;
+}
+
+#products .card h4 {
+  font-size: 22px;
+  font-weight: 900;
+  margin-top: 15px;
+}
+
+#products .card p {
+  font-size: 14px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#products .card-body img {
+  width: 190px;
+}
+
+#products .detail-btn {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#products .detail-btn:hover {
+  color: #000;
+  background: #fff;
+  opacity: 0.7;
+}
+
+#products .order-btn {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#products .order-btn a {
+  color: #fff;
+  font-weight: 700;
+}
+
+#products .order-btn:hover {
+  opacity: 0.9;
+}
+
+.btn-row {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* Modal */
+.sizeWidth img {
+  width: 300px;
+  height: 300px;
+  margin-top: -50px;
+  margin: auto;
+}
+
+.sizeLength img {
+  width: 300px;
+  height: 300px;
+  margin-top: -50px;
+  margin: auto;
+}
+
+.product-modal {
+  transition: 0.3s;
+}
+
+.product-modal h4 {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.product-modal p {
+  font-size: 18px;
+}
+
+/* Icon WA */
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+.whatsapp-icon {
+  margin-top: 16px;
+}
+
+/* Keyframs */
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    margin-left: 10px;
+  }
+
+  .navbar-collapse {
+    background-color: black;
+    padding: 20px 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -60px;
+    transition: 0.3s;
+  }
+
+  .display-4 {
+    font-size: 250%;
+    letter-spacing: 2px;
+  }
+
+  .display-4 br {
+    display: none;
+  }
+
+  .lead {
+    font-size: 75%;
+  }
+
+  .lead br {
+    display: none;
+  }
+
+
+  .whatsapp-icon {
+    margin-top: 15px;
+  }
+
+  .whatsapp_float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 10px;
+    font-size: 22px;
+  }
+}
+
+/* Tablet Version */
+@media (min-width: 768px) and (max-width: 991px) {
+  .sizeWidth {
+    margin-left: 30%;
+  }
+
+  .sizeLength {
+    margin-left: 30%;
+  }
+}
+
+/* DEKSTOP VERSION */
+@media (min-width: 992px) {
+  .navbar-brand {
+    color: white !important;
+  }
+
+  .brand-name {
+    letter-spacing: 5px;
+  }
+
+  .display-4 {
+
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    margin-top: 45px;
+  }
+
+  .nav-link {
+    color: white !important;
+  }
+
+  #icons-wa {
+    padding-left: 93%;
+  }
+
+}
+
+/* Navbar Mobile */
+@media (max-width: 992px) {
+  .navbar {
+    background-color: transparent;
+  }
+
+}
+
+/* Mobile Small */
+@media (max-width: 389px) {
+  .judul {
+    padding-top: 50%;
+  }
+
+  .lead {
+    font-size: 75%;
+  }
+}
